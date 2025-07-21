@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Arch De Arch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="form.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
+            alt="Arch De Arch Logo"
+          />
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Homepage</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="text">Light</span>
+            <span class="icon">☀️</span>
+          </button>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!--Hero section-->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Service <span>Registration</span></h1>
+        <p>
+          Discover how Arch De Arch can elevate your brand with our
+          comprehensive creative solutions
+        </p>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="section-title">
+        <h2>Let's Grow <span>Together</span></h2>
+        <p>
+          Complete this form to register for our premium advertising and media
+          services. Our team will contact you within 24 hours after payment
+          confirmation.
+        </p>
+      </div>
+
+      <!-- Main Form Container -->
+      <div class="form-container">
+        <form id="contactForm" class="contact-form">
+          <!-- First Name -->
+          <div class="form-group">
+            <label for="firstName" class="required">First Name</label>
+            <div class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                id="firstName"
+                class="form-control"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="error-message" id="firstNameError">
+              Please enter your first name
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group">
+            <label for="lastName" class="required">Last Name</label>
+            <div class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                id="lastName"
+                class="form-control"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="error-message" id="lastNameError">
+              Please enter your last name
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="required">Email Address</label>
+            <div class="input-wrapper">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div class="error-message" id="emailError">
+              Please enter a valid email address
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone" class="required">Phone Number</label>
+            <div class="input-wrapper">
+              <i class="fas fa-phone"></i>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="e.g. 0554603464"
+                required
+              />
+            </div>
+            <div class="error-message" id="phoneError">
+              Please enter a valid Ghanaian phone number
+            </div>
+          </div>
+
+          <!-- Company Name -->
+          <div class="form-group">
+            <label for="company">Company Name (Optional)</label>
+            <div class="input-wrapper">
+              <i class="fas fa-building"></i>
+              <input
+                type="text"
+                id="company"
+                class="form-control"
+                placeholder="Enter your company name"
+              />
+            </div>
+          </div>
+
+          <!-- Location Dropdown -->
+          <div class="form-group">
+            <label for="location" class="required">Location</label>
+            <div class="location-search-container">
+              <div class="input-wrapper">
+                <i class="fas fa-map-marker-alt"></i>
+                <input
+                  type="text"
+                  id="locationSearch"
+                  class="form-control location-search-input"
+                  placeholder="Search for your location"
+                  required
+                />
+              </div>
+              <div class="location-dropdown" id="locationDropdown"></div>
+              <input type="hidden" id="location" required />
+            </div>
+            <div class="error-message" id="locationError">
+              Please select your location
+            </div>
+          </div>
+
+          <!-- How Did You Hear About Us -->
+          <div class="form-group">
+            <label for="hearAbout" class="required"
+              >How Did You Hear About Us?</label
+            >
+            <div class="select-wrapper">
+              <select id="hearAbout" class="form-control2" required>
+                <option value="" class="option" disabled selected>
+                  Select an option
+                </option>
+                <option value="YouTube">YouTube</option>
+                <option value="TV">TV</option>
+                <option value="Friends">Friends</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google</option>
+                <option value="Posters and Flyers">Posters and Flyers</option>
+              </select>
+            </div>
+            <div class="error-message" id="hearAboutError">
+              Please select how you heard about us
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <i class="fas fa-spinner spinner"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Modal -->
+      <div class="overlay" id="successOverlay">
+        <div class="success-modal">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h2>Thank You!</h2>
+          <p>Thank you for contacting us, we will reach out to you soon.</p>
+          <button class="close-modal-btn" id="closeModalBtn">
+            <i class="fas fa-thumbs-up"></i>
+            <span>Got It</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
+            alt="Arch De Arch Logo"
+          />
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Arch De Arch. All Rights Reserved.</p>
+        <p>
+          Pictures sourced from freepik.com, google.com, wikipidiea.com and
+          unsplash.com
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
