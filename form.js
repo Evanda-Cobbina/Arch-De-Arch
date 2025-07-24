@@ -1,4 +1,59 @@
-       //Main JS for the whole website
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getFirestore,collection,addDoc,Timestamp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBktrf9CquD-eR_fYQDjKhcPMQ5bTgdhC0",
+  authDomain: "arch-de-arch-3ddf4.firebaseapp.com",
+  projectId: "arch-de-arch-3ddf4",
+  storageBucket: "arch-de-arch-3ddf4.firebasestorage.app",
+  messagingSenderId: "84087786237",
+  appId: "1:84087786237:web:e59e9f101b5321d996cc94"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+window.submitBooking = async function (event) {
+
+    const firstname = document.getElementById('firstName').value;
+    const lastname = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('phone').value;
+    const location = document.getElementById('locationSearch').value;
+    const hearAbout = document.getElementById('hearAbout').value;
+
+    try {
+        await addDoc(collection(db,'bookings'), {
+            firstname,
+            lastname,
+            email,
+            phoneNumber,
+            location,
+            hearAbout,
+            timestamp: Timestamp.now()
+        });
+
+        alert('Booking saved successfully')
+    } catch (error) {
+        console.error("Error saving booking", error);
+        alert("failed to save booking");
+
+    }
+
+};
+
+
+
+      
+      
+      
+      
+      
+      //Main JS for the whole website
        // Mobile Menu Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
@@ -326,5 +381,7 @@
             // Initialize
             initLocationDropdown();
         });
-      
+
+
+
 
