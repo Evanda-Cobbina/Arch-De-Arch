@@ -153,16 +153,16 @@ window.submitBooking = async function (event) {
 
             // Ghanaian locations list (alphabetical order)
             const ghanaLocations = [
-                "Abeka", "Abosseyokai", "Accra", "Accra New Town", "Achimota", 
+                "Abeka", "Abosseyokai", "Abelkuma", "Abokobi", "Agbogba", "Accra", "Accra New Town", "Achimota", 
                 "Ada Foah", "Ada Kasseh", "Adabraka", "Adenta East", "Adenta Municipality", 
                 "Aflao", "Agona Swedru", "Airport Residential Area", "Akweteyman", "Akim Oda", 
-                "Ashiaman", "Awoshie", "Axim", "Bolgatanga", "Cape Coast", 
-                "Dodowa", "Effia Kuma", "Gbawe", "Gbegbe", "Goaso", 
+                "Ashiaman", "Awoshie", "Axim", "Bolgatanga", "Boshe", "Cape Coast", 
+                "Dodowa", "Dome", "Effia Kuma",  "East Legon", "Gbawe", "Gbegbe", "Goaso", "Haatso", 
                 "Ho", "Hohoe", "Kade", "Kasoa", "Kintampo", 
-                "Koforidua", "Kumasi", "Lashibi", "Madina", "Ngleshi Amanfro", 
+                "Koforidua", "Kumasi", "Lashibi", "Madina", "North Legon", "Ngleshi Amanfro", 
                 "Nkawkaw", "Nungua", "Obuasi", "Posters and Flyers", "Sunyani", 
                 "Suhum", "Takoradi", "Tamale", "Tarkwa", "Techiman", 
-                "Tema", "Tema New Town", "Teshie", "Wa", "Winneba"
+                "Tema", "Tema New Town", "Teshie", "Wa", "Winneba", "Westland"
             ];
 
             // DOM Elements
