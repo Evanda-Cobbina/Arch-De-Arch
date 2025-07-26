@@ -271,7 +271,7 @@ window.submitBooking = async function (event) {
                 
                 // Phone (Ghanaian format)
                 const phone = document.getElementById('phone').value.trim();
-                const ghanaPhoneRegex = /^(?:233|0)?(?:24|54|55|59|20|50|26|27|28|23|57|56)\d{7}$/;
+                const ghanaPhoneRegex = /^(?:233|0)?(?:24|53|25|54|55|59|20|50|26|27|28|23|57|56)\d{7}$/;
                 if (!phone || !ghanaPhoneRegex.test(phone)) {
                     showError('phoneError', 'Please enter a valid Ghanaian phone number');
                     isValid = false;
