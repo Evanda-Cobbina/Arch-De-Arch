@@ -422,6 +422,94 @@
         </div>
 
         <div class="contact-form">
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/YOUR-EMAIL@ARCHDEARCH.COM"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" name="_subject" value="New Project Inquiry" />
+            <input type="hidden" name="_cc" value="support@archdearch.com" />
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="Advertising">Advertising</option>
+                <option value="Animation">Animation</option>
+                <option value="Social Media">Social Media Marketing</option>
+                <option value="Photography">Photography</option>
+                <option value="Videography">Videography</option>
+                <option value="Blue Lumine">
+                  Blue Lumine (Revenue Collection)
+                </option>
+                <option value="A&C Legends">
+                  A&C Legends (Tech Solutions)
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your project..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Attach Files (Optional)</label>
+              <div class="file-input-container">
+                <label class="file-input-label" for="attachment">
+                  <i class="fas fa-paperclip"></i>
+                  <span>Choose File</span>
+                </label>
+                <input
+                  type="file"
+                  id="attachment"
+                  name="attachment"
+                  class="file-input"
+                  accept=".pdf,.jpg,.png,.docx"
+                  onchange="updateFileName(this)"
+                />
+                <span id="file-name" class="file-name">No file chosen</span>
+              </div>
+              <small>Max. 5MB (PDF, JPG, PNG, DOCX)</small>
+            </div>
+
+            <button type="submit" class="cta-button">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+
+          <!-- Booking Widget -->
+          <div class="booking-widget">
+            <h3><i class="fas fa-video"></i> Prefer a Video Call?</h3>
+            <p>Schedule a free 30-minute consultation with our team.</p>
+            <a href="YOUR-CALENDLY-LINK" class="btn" target="_blank">
+              <i class="fas fa-calendar-alt"></i> Book Now
+            </a>
+          </div>
+        </div>
+        <!--
+        <div class="contact-form">
           <form id="contactForm">
             <div>
               <label for="name">Your Name</label>
@@ -446,6 +534,7 @@
             <button type="submit" class="cta-button">Send Message</button>
           </form>
         </div>
+        -->
       </div>
     </section>
 

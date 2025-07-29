@@ -133,6 +133,97 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+// Form Submission
+const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Show loading state
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+    
+    try {
+        // FormSubmit handles the actual submission
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData
+        });
+        
+        if (response.ok) {
+            showSuccessMessage();
+            contactForm.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    } catch (error) {
+        showErrorMessage();
+    } finally {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+    }
+});
+
+function showSuccessMessage() {
+    const successDiv = document.createElement('div');
+    successDiv.className = 'success-message';
+    successDiv.innerHTML = `
+        <i class="fas fa-check-circle"></i>
+        <h4>Message Sent Successfully!</h4>
+        <p>Thank you for contacting us. We'll respond within 24 hours.</p>
+    `;
+    contactForm.prepend(successDiv);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        successDiv.style.opacity = '0';
+        setTimeout(() => successDiv.remove(), 300);
+    }, 5000);
+}
+
+function showErrorMessage() {
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'success-message';
+    errorDiv.style.background = '#ff6b6b';
+    errorDiv.innerHTML = `
+        <i class="fas fa-exclamation-circle"></i>
+        <h4>Error Sending Message</h4>
+        <p>Please try again or contact us directly at info@archdearch.com</p>
+    `;
+    contactForm.prepend(errorDiv);
+    
+    // Remove after 5 seconds
+    setTimeout(() => {
+        errorDiv.style.opacity = '0';
+        setTimeout(() => errorDiv.remove(), 300);
+    }, 5000);
+}
+
+
+// File input display functionality
+function updateFileName(input) {
+    const fileNameDisplay = document.getElementById('file-name');
+    if (input.files.length > 0) {
+        fileNameDisplay.textContent = input.files[0].name;
+        
+        // Validate file size
+        if (input.files[0].size > 5 * 1024 * 1024) { // 5MB
+            fileNameDisplay.textContent = 'File too large (max 5MB)';
+            fileNameDisplay.style.color = '#ff6b6b';
+            input.value = ''; // Clear the file input
+        } else {
+            fileNameDisplay.style.color = '';
+        }
+    } else {
+        fileNameDisplay.textContent = 'No file chosen';
+    }
+}
+
+/* 
 // Form submission
 const contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", function (e) {
@@ -152,6 +243,7 @@ contactForm.addEventListener("submit", function (e) {
   // Reset form
   contactForm.reset();
 });
+*/
 
 // Update active nav link based on scroll position
 window.addEventListener("scroll", () => {
