@@ -751,6 +751,11 @@ body.light-mode .subsidiary {
 
 /* Responsive */
 @media (max-width: 992px) {
+  .logo img {
+    margin-top: 6px;
+    height: 28px;
+  }
+
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -762,6 +767,10 @@ body.light-mode .subsidiary {
 }
 
 @media (max-width: 768px) {
+  .logo img {
+    height: 30px;
+  }
+
   .about-header {
     padding: 3rem 5% 2rem;
   }
@@ -806,7 +815,10 @@ body.light-mode .subsidiary {
 
 @media (max-width: 480px) {
   .client-logo {
-    height: 30px;
+    height: 28px;
+  }
+  .logo img {
+    height: 26.5px;
   }
 }
 
