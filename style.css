@@ -853,6 +853,9 @@ body.light-mode .subsidiary {
     opacity: 1;
     transform: scale(1.1);
   }
+  .contact-form {
+    transform: translateX(-15px);
+  }
 }
 
 /* Contact Section */
@@ -1212,6 +1215,7 @@ body.light-mode .copyright {
 
   .map-container {
     height: 250px;
+    width: 30rem;
   }
 }
 
@@ -1222,6 +1226,11 @@ body.light-mode .copyright {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+  .map-container {
+    height: 250px;
+    width: 20rem;
+    transform: translateX(-10px);
   }
 }
 @media (max-width: 480px) {
@@ -1235,6 +1244,22 @@ body.light-mode .copyright {
 
   .section-title h2 {
     font-size: 1.8rem;
+  }
+  .map-container {
+    height: 250px;
+    width: 18rem;
+    transform: translateX(-50px);
+  }
+  /*Do one for Z fold and Z flip screens, Around 350px, but google to be sure.*/
+}
+@media (max-width: 390px) {
+  .map-container {
+    height: 250px;
+    width: 14.5rem;
+    transform: translateX(-50px);
+  }
+  .contact-form {
+    transform: translateX(-14px);
   }
 }
 /*New  stuff*/

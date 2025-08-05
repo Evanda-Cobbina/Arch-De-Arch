@@ -631,6 +631,10 @@ body.light-mode .file-name {
   .contact-hero h1 {
     font-size: 2.5rem;
   }
+  .map-container {
+    height: 270px;
+    width: 30rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -688,6 +692,11 @@ body.light-mode .file-name {
     text-align: center;
     gap: 1.5rem;
   }
+  .map-container {
+    height: 250px;
+    width: 20rem;
+    transform: translateX(-10px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -712,5 +721,15 @@ body.light-mode .file-name {
 
   .map-container {
     height: 200px;
+    width: 18rem;
+    transform: translateX(-30px);
+  }
+}
+
+@media (max-width: 390px) {
+  .map-container {
+    height: 250px;
+    width: 14.5rem;
+    transform: translateX(-30px);
   }
 }
