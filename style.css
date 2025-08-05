@@ -764,6 +764,17 @@ body.light-mode .subsidiary {
     max-width: 600px;
     margin: 0 auto;
   }
+  .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  body.light-mode .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -811,6 +822,17 @@ body.light-mode .subsidiary {
   .contact-form {
     padding: 1.5rem;
   }
+  .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  body.light-mode .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 480px) {
@@ -819,6 +841,17 @@ body.light-mode .subsidiary {
   }
   .logo img {
     height: 20px;
+  }
+  .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  body.light-mode .client-logo {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
   }
 }
 
