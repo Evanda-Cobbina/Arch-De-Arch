@@ -1,53 +1,26 @@
-// Firebase imports
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import { getFirestore, collection, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+function SendEmail (){
+    const templateParams = {
+        firstname : document.getElementById('firstname').value ,
+        lastname : document.getElementById('lastname').value,
+        email : document.getElementById('email').value,
+        phone  : document.getElementById('phone').value,
+        location : document.getElementById('locationSearch').value,
+        hear : document.getElementById('hearAbout').value,
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBktrf9CquD-eR_fYQDjKhcPMQ5bTgdhC0",
-  authDomain: "arch-de-arch-3ddf4.firebaseapp.com",
-  projectId: "arch-de-arch-3ddf4",
-  storageBucket: "arch-de-arch-3ddf4.appspot.com", // Fixed typo: was `.firebasestorage.app`
-  messagingSenderId: "84087786237",
-  appId: "1:84087786237:web:e59e9f101b5321d996cc94"
-};
 
-// Initialize Firebase and Firestore
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+    };
 
-// Submit handler
-window.submitBooking = async function (event) {
-  event.preventDefault(); // ✅ Prevent default form submit behavior
+    emailjs
+          .send('ServiceID', 'TemplateID', templateParams)
+          .then(() => {
+            alert('Email Sent successfully');
+          })
 
-  // Get form values
-  const firstname = document.getElementById('firstName').value.trim();
-  const lastname = document.getElementById('lastName').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phoneNumber = document.getElementById('phone').value.trim();
-  const location = document.getElementById('locationSearch').value.trim(); // Or use 'location' hidden input if needed
-  const hearAbout = document.getElementById('hearAbout').value;
-
-  // Optionally validate required fields manually here too
-
-  try {
-    await addDoc(collection(db, 'bookings'), {
-      firstname,
-      lastname,
-      email,
-      phoneNumber,
-      location,
-      hearAbout,
-      timestamp: Timestamp.now()
-    });
-
-    alert('✅ Booking saved successfully!');
-    document.getElementById("contactForm").reset(); // Clear form after successful submit
-  } catch (error) {
-    console.error("❌ Error saving booking:", error);
-    alert("❌ Failed to save booking. Please try again.");
-  }
-};
+          .catch((error) => {
+            console.log('Error sending email:',error);
+            alert("Failed to send email, please try again.");
+          });
+}
 
 
 
