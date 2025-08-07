@@ -83,10 +83,11 @@ window.submitBooking = async function (event) {
             });
         });
 
-        // Theme Toggle
+        /*// Theme Toggle
         const themeToggle = document.querySelector('.theme-toggle');
         const toggleText = document.querySelector('.theme-toggle .text');
         const toggleIcon = document.querySelector('.theme-toggle .icon');
+        const logo = document.getElementById("site-logo");
 
         function updateThemeToggle() {
             if(body.classList.contains('light-mode')) {
@@ -96,6 +97,10 @@ window.submitBooking = async function (event) {
                 toggleText.textContent = 'Light';
                 toggleIcon.textContent = '☀️';
             }
+        // 2. Update logo
+            logo.src = isLightMode ? "pics/arch_de_arch.png" : "pics/arch_de_arch_w.png";
+        // 3. Save preference
+            localStorage.setItem("theme", isLightMode ? "light" : "dark");
         }
 
         themeToggle.addEventListener('click', () => {
@@ -110,7 +115,45 @@ window.submitBooking = async function (event) {
         if(localStorage.getItem('theme') === 'light') {
             body.classList.add('light-mode');
         }
-        updateThemeToggle();
+        updateThemeToggle();*/
+
+        //For the theme toggle
+const themeToggle = document.querySelector(".theme-toggle");
+const toggleText = document.querySelector(".theme-toggle .text");
+const toggleIcon = document.querySelector(".theme-toggle .icon");
+const logo = document.getElementById("site-logo");
+
+// Update all theme-related elements
+function updateTheme() {
+  const isLightMode = body.classList.contains("light-mode");
+
+  // 1. Update toggle button
+  toggleText.textContent = isLightMode ? "Dark" : "Light";
+  toggleIcon.textContent = isLightMode ? "🌙" : "☀️";
+
+  // 2. Update logo
+  logo.src = isLightMode ? "pics/arch_de_arch.png" : "pics/arch_de_arch_w.png";
+
+  // 3. Save preference
+  localStorage.setItem("theme", isLightMode ? "light" : "dark");
+}
+
+// Theme toggle event
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("light-mode");
+  updateTheme();
+});
+
+// Initialize theme on load
+function initTheme() {
+  if (localStorage.getItem("theme") === "light") {
+    body.classList.add("light-mode");
+  }
+  updateTheme();
+}
+
+// Run when page loads
+document.addEventListener("DOMContentLoaded", initTheme);
 
         // Scroll behavior for navigation
         window.addEventListener('scroll', () => {

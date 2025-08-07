@@ -19,6 +19,18 @@
     />
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "mHYtTT6E1ERyO_iIn",
+        });
+      })();
+    </script>
   </head>
   <body>
     <!-- Navigation -->
@@ -26,8 +38,10 @@
       <nav class="navbar">
         <div class="logo">
           <img
-            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
-            alt="Arch De Arch Logo"
+            src="pics/arch_de_arch_w.png"
+            alt=""
+            id="site-logo"
+            class="logo"
           />
         </div>
 
@@ -241,8 +255,10 @@
       <div class="footer-content">
         <div class="footer-logo">
           <img
-            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
-            alt="Arch De Arch Logo"
+            src="pics/arch_de_arch_w.png"
+            alt=""
+            id="footer-logo"
+            class="logo"
           />
         </div>
         <div class="footer-links">
