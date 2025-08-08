@@ -694,16 +694,16 @@ body.light-mode .locations-slider-section {
   .slide-content h3 {
     font-size: 2rem;
   }
-  .client-logo {
-    filter: grayscale(0%) brightness(1);
+  .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 
-  body.light-mode .client-logo {
-    filter: grayscale(0%) brightness(1);
+  body.light-mode .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 }
 
@@ -730,16 +730,16 @@ body.light-mode .locations-slider-section {
     height: 50px;
     padding: 20px;
   }
-  .client-logo {
-    filter: grayscale(0%) brightness(1);
+  .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 
-  body.light-mode .client-logo {
-    filter: grayscale(0%) brightness(1);
+  body.light-mode .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 }
 
@@ -769,16 +769,29 @@ body.light-mode .locations-slider-section {
     padding: 0.7rem 2rem;
     font-size: 0.9rem;
   }
-  .client-logo {
-    filter: grayscale(0%) brightness(1);
+  .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 
-  body.light-mode .client-logo {
-    filter: grayscale(0%) brightness(1);
+  body.light-mode .client-logos img {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
+  }
+}
+@media (max-width: 490px) {
+  .client-logos img {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
+  }
+
+  body.light-mode .client-logos img {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(1);
   }
 }
 
@@ -1096,13 +1109,26 @@ body.light-mode .copyright {
   .pricing-card {
     padding: 1.5rem;
   }
-  .client-logo {
+  .client-logos img {
     filter: grayscale(0%) brightness(1);
     opacity: 1;
     transform: scale(1.1);
   }
 
-  body.light-mode .client-logo {
+  body.light-mode .client-logos img {
+    filter: grayscale(0%) brightness(1);
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 390px) {
+  .client-logos img {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  body.light-mode .client-logos img {
     filter: grayscale(0%) brightness(1);
     opacity: 1;
     transform: scale(1.1);

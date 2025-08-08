@@ -693,6 +693,13 @@ select.form-control {
   .logo img {
     margin-top: 6px;
     height: 28px;
+    transform: translateX(-30px);
+  }
+  .navbar {
+    transform: translateY(-20px);
+  }
+  .nav-links {
+    transform: translateX(35px);
   }
 }
 @media (max-width: 768px) {
@@ -729,6 +736,7 @@ select.form-control {
 @media (max-width: 480px) {
   .logo img {
     height: 26.5px;
+    transform: translateX(-20px);
   }
 
   .form-header {

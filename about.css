@@ -578,7 +578,7 @@ body.light-mode .copyright {
 
   .about-container,
   .contact-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .about-image {
@@ -649,10 +649,12 @@ body.light-mode .copyright {
 
   .footer-content {
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-links {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
   }
 }
