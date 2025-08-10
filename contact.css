@@ -635,6 +635,13 @@ body.light-mode .file-name {
     height: 270px;
     width: 30rem;
   }
+
+  .booking-widget {
+    background: none;
+    border: none;
+    text-align: left;
+    margin-left: -25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -697,6 +704,13 @@ body.light-mode .file-name {
     width: 20rem;
     transform: translateX(-10px);
   }
+
+  .booking-widget {
+    background: none;
+    border: none;
+    text-align: left;
+    margin-left: -25px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -724,6 +738,13 @@ body.light-mode .file-name {
     width: 18rem;
     transform: translateX(-30px);
   }
+
+  .booking-widget {
+    background: none;
+    border: none;
+    text-align: left;
+    margin-left: -25px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -731,5 +752,12 @@ body.light-mode .file-name {
     height: 250px;
     width: 14.5rem;
     transform: translateX(-30px);
+  }
+
+  .booking-widget {
+    background: none;
+    border: none;
+    text-align: left;
+    margin-left: -25px;
   }
 }
