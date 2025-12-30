@@ -929,8 +929,8 @@ body.light-mode .footer {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.footer-logo img {
-  height: 40px;
+.footer .logo img {
+  height: 13vh;
   transition: filter 0.4s ease;
 }
 .footer-links {

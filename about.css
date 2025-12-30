@@ -522,6 +522,10 @@ body.light-mode .footer {
   display: flex;
   gap: 1.5rem;
 }
+.footer .logo img {
+  height: 13vh;
+  transition: filter 0.4s ease;
+}
 
 .footer-links a {
   color: var(--white);

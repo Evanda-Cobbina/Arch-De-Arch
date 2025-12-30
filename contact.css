@@ -496,8 +496,8 @@ body.light-mode .footer {
   margin: 0 auto;
 }
 
-.footer-logo img {
-  height: 40px;
+.footer .logo img {
+  height: 13vh;
 }
 
 .footer-links {
