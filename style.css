@@ -162,6 +162,11 @@ body.nav-scrolled.light-mode {
 }
 
 /* Hero Section */
+.hero-logo {
+  height: 13.5vh;
+  transition: filter 0.4s ease;
+}
+
 .hero {
   height: 100vh;
   display: flex;
