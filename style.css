@@ -217,6 +217,11 @@ body.light-mode .hero::after {
   }
 }
 
+.hero-logo {
+  height: 13.5vh;
+  transition: filter 0.4s ease;
+}
+
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
@@ -1252,6 +1257,10 @@ body.light-mode .copyright {
   .map-container {
     height: 250px;
     width: 30rem;
+  }
+  .hero-logo {
+    height: 9.5vh;
+    transition: filter 0.4s ease;
   }
 }
 
