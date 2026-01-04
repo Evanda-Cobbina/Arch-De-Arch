@@ -753,6 +753,12 @@ body.light-mode .subsidiary {
   margin-bottom: 0.5rem;
 }
 
+body.light-mode .client-logo:hover {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .logo img {
