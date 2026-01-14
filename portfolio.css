@@ -148,10 +148,31 @@ body.light-mode .hero-portfolio h1 {
   margin-bottom: 2.5rem;
 }
 /* ================= Accra ================= */
-.Accra {
+.billboards-and-buildings {
   background-color: var(--dark-bg);
   padding: var(--section-padding);
 }
+.billboards-text {
+  text-align: center;
+}
+.billboards-text h2 {
+  padding-top: 4rem;
+  font-size: 3rem;
+}
+
+.billboards-text h2 span {
+  color: var(--gold);
+}
+
+.billboards-text h2::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold), var(--yellow));
+  margin: 1rem auto 0;
+}
+
 .accra-content h2 {
   padding-top: 4rem;
   font-size: 2.2rem;
@@ -180,4 +201,85 @@ body.light-mode .hero-portfolio h1 {
 .tema-content h2 {
   padding-top: 4rem;
   font-size: 2.2rem;
+}
+
+/***************** Project Image *****************/
+.project-image {
+  width: 85%;
+  height: auto;
+  display: block;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* =====================================================
+HORIZONTAL GALLERY
+===================================================== */
+.gallery-wrapper {
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 80px 0 120px 40px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 80px;
+  width: max-content;
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 320px;
+}
+
+.gallery-image {
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-image:hover img {
+  transform: scale(1.04);
+}
+
+/* =====================================================
+LIGHT MODE OVERRIDES
+===================================================== */
+body.light-mode {
+  background: var(--light-grey);
+  color: #111;
+}
+
+body.light-mode .hero-portfolio p {
+  color: var(--text-muted-light);
+}
+
+body.light-mode .gallery-wrapper {
+  background: var(--light-grey);
+}
+
+body.light-mode .toggle-btn {
+  color: #111;
+}
+
+body.light-mode .hero-divider {
+  background: var(--gold);
+}
+
+/* =====================================================
+SCROLLBAR (OPTIONAL, CLEAN)
+===================================================== */
+.gallery-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery-wrapper::-webkit-scrollbar-thumb {
+  background: var(--gold);
 }

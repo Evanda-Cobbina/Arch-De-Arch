@@ -283,3 +283,50 @@ window.addEventListener("scroll", () => {
             updateLogo();
             document.addEventListener('DOMContentLoaded', updateLogo);
     */
+
+
+            // File input display functionality
+            /* =====================================================
+EDIT HERE: GALLERY DATA
+Each array = one column
+===================================================== */
+const galleryData = [
+[
+'pics/',
+'https://images.unsplash.com/photo-1529429617124-a2e0c1b2a47b',
+'https://images.unsplash.com/photo-1599423300746-b62533397364'
+],
+[
+'https://images.unsplash.com/photo-1501183638710-841dd1904471',
+'https://images.unsplash.com/photo-1494526585095-c41746248156'
+],
+[
+'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
+'https://images.unsplash.com/photo-1502673530728-f79b4cab31b1',
+'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb'
+]
+];
+
+
+const galleryTrack = document.getElementById('galleryTrack');
+
+
+galleryTrack.innerHTML = galleryData.map(column => {
+return `
+<div class="gallery-column">
+${column.map(img => `
+<div class="gallery-image">
+<img src="${img}?q=80&w=800&auto=format&fit=crop" />
+</div>
+`).join('')}
+</div>
+`;
+}).join('');
+
+
+/* =====================================================
+THEME TOGGLE
+===================================================== */
+document.getElementById('themeToggle').addEventListener('click', () => {
+document.body.classList.toggle('light-mode');
+});
