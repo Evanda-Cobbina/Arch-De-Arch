@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arch De Arch - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="try.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
+            alt="Arch De Arch Logo"
+          />
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html">Homepage</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="text">Light</span>
+            <span class="icon">☀️</span>
+          </button>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <main class="portfolio-page">
+      <div class="portfolio-header">
+        <h1>Our <span class="highlight">Portfolio</span></h1>
+        <p>Explore our featured projects from across Ghana and beyond</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="category-filter">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="advertising">
+          Advertising
+        </button>
+        <button class="filter-btn" data-filter="animation">Animation</button>
+        <button class="filter-btn" data-filter="photography">
+          Photography
+        </button>
+        <button class="filter-btn" data-filter="videography">
+          Videography
+        </button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="gallery-container">
+        <div class="gallery-slider">
+          <!-- Advertising Images -->
+          <div class="gallery-item" data-category="advertising">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="MTN Billboard Campaign - Accra"
+              />
+              <div class="image-overlay">
+                <h3>MTN Billboard Campaign</h3>
+                <p>Outdoor advertising campaign across Accra</p>
+                <button class="view-btn" data-index="0">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="advertising">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Cocoa Processing Company Campaign"
+              />
+              <div class="image-overlay">
+                <h3>Cocoa Processing Co.</h3>
+                <p>Print and digital advertising campaign</p>
+                <button class="view-btn" data-index="1">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animation Images -->
+          <div class="gallery-item" data-category="animation">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                alt="Animated Explainer Video"
+              />
+              <div class="image-overlay">
+                <h3>Bank of Ghana Animation</h3>
+                <p>Financial education explainer video</p>
+                <button class="view-btn" data-index="2">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="animation">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                alt="Character Animation"
+              />
+              <div class="image-overlay">
+                <h3>Character Animation Series</h3>
+                <p>Educational content for children</p>
+                <button class="view-btn" data-index="3">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photography Images -->
+          <div class="gallery-item" data-category="photography">
+            <div class="image-card">
+              <img
+                src="pics/a-professional-overhead-photograph-of-a-_HrgL1InfRrugOpsXSHjcwA_cfuXb4snS16J3Evev9djqw.jpeg"
+                alt="Kumasi Market Photography"
+              />
+              <div class="image-overlay">
+                <h3>Kumasi Central Market</h3>
+                <p>Brand photography for local businesses</p>
+                <button class="view-btn" data-index="4">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="photography">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                alt="Corporate Headshots"
+              />
+              <div class="image-overlay">
+                <h3>Corporate Headshots</h3>
+                <p>Executive photography for Ghanaian companies</p>
+                <button class="view-btn" data-index="5">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Videography Images -->
+          <div class="gallery-item" data-category="videography">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Documentary Production"
+              />
+              <div class="image-overlay">
+                <h3>Coastal Documentary</h3>
+                <p>Documentary film about Ghana's coastline</p>
+                <button class="view-btn" data-index="6">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="videography">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Commercial Video"
+              />
+              <div class="image-overlay">
+                <h3>Telecom Commercial</h3>
+                <p>30-second TV commercial production</p>
+                <button class="view-btn" data-index="7">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Images -->
+          <div class="gallery-item" data-category="social">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="Social Media Campaign"
+              />
+              <div class="image-overlay">
+                <h3>#VisitGhana Campaign</h3>
+                <p>Social media tourism campaign</p>
+                <button class="view-btn" data-index="8">View Project</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="social">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="Influencer Marketing"
+              />
+              <div class="image-overlay">
+                <h3>Influencer Collaboration</h3>
+                <p>Brand partnership with Ghanaian influencers</p>
+                <button class="view-btn" data-index="9">View Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="slider-nav prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-nav next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Project Description -->
+      <div class="project-description">
+        <h2>Featured <span class="highlight">Projects</span></h2>
+        <div class="description-content">
+          <p>
+            Each project represents our commitment to excellence and innovation
+            in the Ghanaian creative space. From billboard campaigns in Accra to
+            digital content for local brands, we bring stories to life.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="image-modal">
+      <div class="modal-content">
+        <button class="modal-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-image-container">
+          <img src="" alt="" class="modal-image" />
+        </div>
+        <div class="modal-info">
+          <h3 class="modal-title"></h3>
+          <p class="modal-description"></p>
+          <div class="modal-meta">
+            <span class="modal-category"></span>
+            <span class="modal-date"></span>
+          </div>
+        </div>
+        <div class="modal-nav">
+          <button class="modal-prev">
+            <i class="fas fa-chevron-left"></i> Previous
+          </button>
+          <button class="modal-next">
+            Next <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="https://via.placeholder.com/150x50?text=Arch+De+Arch"
+            alt="Arch De Arch Logo"
+          />
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Arch De Arch. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="try.js"></script>
+  </body>
+</html>
