@@ -41,6 +41,24 @@ body {
   transition: var(--transition);
 }
 
+/*=================== HAMBURGER MENU =================*/
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--nav-text);
+  transition: all 0.3s ease;
+}
+
 /* ================= LIGHT MODE ================= */
 body.light-mode {
   background: var(--light-bg);
@@ -183,35 +201,6 @@ body.light-mode .hero-portfolio h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-}
-
-/* ================= Kumasi ================= */
-.Kumasi {
-  background-color: var(--charcoal);
-  padding: var(--section-padding);
-}
-.kumasi-content h2 {
-  padding-top: 4rem;
-  font-size: 2.2rem;
-}
-
-/* ================= Tema ================= */
-.Tema {
-  background-color: #1e1d1d;
-  padding: var(--section-padding);
-}
-.tema-content h2 {
-  padding-top: 4rem;
-  font-size: 2.2rem;
-}
-
-/***************** Project Image *****************/
-.project-image {
-  width: 85%;
-  height: auto;
-  display: block;
-  padding-top: 1.5rem;
-  padding-left: 1rem;
 }
 
 /* =====================================================
@@ -703,6 +692,26 @@ body.light-mode .modal-date {
 
   .modal-nav {
     padding: 1rem;
+  }
+
+  .hamburger {
+    background-color: var(--light-bg);
+    display: flex;
+  }
+  body.light-mode .hamburger {
+    background-color: var(--black);
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
   }
 }
 
