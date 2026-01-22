@@ -4,35 +4,42 @@ document.addEventListener('DOMContentLoaded', function() {
     //It shoud correspond to the images in the gallery in html
     const galleryData = [
         {
-            src: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            src: "pics/momo-billboard-1.jpeg",
             title: "MTN Billboard Campaign",
             description: "Outdoor advertising campaign spanning major highways in Accra. This campaign reached over 2 million people and increased brand awareness by 45%.",
             category: "advertising",
             date: "March 2023"
         },
         {
-            src: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            src: "pics/Frytol-building-2.jpg",
             title: "Cocoa Processing Company",
             description: "Print and digital advertising campaign promoting Ghanaian cocoa products to international markets. Featured in 15+ publications.",
             category: "advertising",
             date: "January 2023"
         },
         {
-            src: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+            src: "pics/MTN-building-1.jpg",
+            title: "Cocoa Processing Company",
+            description: "Print and digital advertising campaign promoting Ghanaian cocoa products to international markets. Featured in 15+ publications.",
+            category: "advertising",
+            date: "January 2023"
+        },
+        {
+            src: "pics/work-image-80.jpg",
             title: "Bank of Ghana Animation",
             description: "2D animated explainer video for financial literacy. The animation simplified complex banking concepts for general audiences.",
             category: "animation",
             date: "February 2023"
         },
         {
-            src: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+            src: "pics/work-image-29.jpg",
             title: "Character Animation Series",
             description: "Educational animation series for children, teaching Ghanaian history and culture through engaging character stories.",
             category: "animation",
             date: "December 2022"
         },
         {
-            src: "pics/a-professional-overhead-photograph-of-a-_HrgL1InfRrugOpsXSHjcwA_cfuXb4snS16J3Evev9djqw.jpeg",
+            src: "pics/monochrome-scene-depicting-life-workers-construction-industry-site.jpg",
             title: "Kumasi Central Market",
             description: "Brand photography capturing the vibrant energy of Kumasi's largest market. Used for tourism promotion campaigns.",
             category: "photography",
@@ -46,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "October 2022"
         },
         {
-            src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            src: "pics/work-image-36.jpg",
             title: "Coastal Documentary",
             description: "Documentary film exploring Ghana's coastline conservation efforts. Screened at 5 international film festivals.",
             category: "videography",
             date: "September 2022"
         },
         {
-            src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+            src: "pics/work-image-30.jpg",
             title: "Telecom Commercial",
             description: "30-second TV commercial featuring Ghanaian celebrities. Aired nationwide during prime time slots.",
             category: "videography",
@@ -67,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             date: "July 2022"
         },
         {
-            src: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9swEbeXa7QZ2SUKw2a9oAXEA2I7BCKp1zA&s",
             title: "Influencer Collaboration",
             description: "Brand partnership with 10 top Ghanaian influencers. Campaign reached 3 million unique users across social platforms.",
             category: "social",
